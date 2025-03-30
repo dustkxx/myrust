@@ -9,6 +9,7 @@ fn route(ip_kind: &IpAddrKind) {
         IpAddrKind::V6 => println!("toute to ipv6"),
     }
 }
+#[derive(Debug)]
 struct IpAddr {
     kind: IpAddrKind,
     address: String,
@@ -23,4 +24,11 @@ fn main() {
     println!("{:?}", four);
     println!("{:?}", six);
     println!("four is : {:#?}", four);
+    
+    let ip_addr1 = IpAddr {
+        kind: IpAddrKind::V4,
+        address: String::from("1234"),
+    };
+
+    println!("ip_addr1 is : {:#?}", ip_addr1);
 } 
