@@ -1,1 +1,1 @@
-# first_rust
+# myrust
