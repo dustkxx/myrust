@@ -26,6 +26,8 @@
         return result;
     }
 
+
+    #[allow(dead_code)]
     pub fn traits(s:&str) ->String {
         // 处理字符串
         // 将字符串中的空格替换为下划线
