@@ -1,7 +1,5 @@
     #[allow(dead_code)]
     pub fn split_words(s: &str) -> Vec<&str> {
-        /// 用空格分割字符串
-        /// 
         let mut result: Vec<&str> = Vec::new();
         let bytes = s.as_bytes();
         let mut space_idx: usize = 0;
@@ -29,9 +27,9 @@
     }
 
     pub fn traits(s:&str) ->String {
-        /// 处理字符串
-        /// 将字符串中的空格替换为下划线
-        /// 处理字符串
+        // 处理字符串
+        // 将字符串中的空格替换为下划线
+        // 处理字符串
         let mut result = String::new();
         let bytes = s.as_bytes();
         for &item in bytes.iter() {

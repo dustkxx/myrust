@@ -2,7 +2,6 @@ mod str_utils;
 
 
 use str_utils::split_words;
-use str_utils::traits;
     fn main() {
         let mut s = String::new();
         println!("请输入一个字符串:");
