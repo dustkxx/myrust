@@ -33,21 +33,3 @@ fn the_borrow_of_evctor() {
     // println!("The first element is {}", first);
   
 }
-
-// Demonstrating the difference between Vec's iter and into_iter
-fn demonstrate_vec_iter_vs_into_iter() {
-    let v = vec![1, 2, 3];
-
-    // iter() borrows each element, so the vector is not consumed
-    for val in v.iter() {
-        println!("iter: {}", val);
-    }
-    println!("Vector after iter: {:?}", v);
-
-    // into_iter() consumes the vector, taking ownership of each element
-    for val in v.into_iter() {
-        println!("into_iter: {}", val);
-    }
-    // The vector cannot be used here anymore because it has been consumed
-    // println!("Vector after into_iter: {:?}", v); // This would cause a compile error
-}
